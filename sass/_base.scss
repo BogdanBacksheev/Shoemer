@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: arial, calibri, sans-serif; 
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	width: 100%;
+	min-width: 320px;
+	max-width: 1170px;
+}
+
+.container:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.listReset {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
