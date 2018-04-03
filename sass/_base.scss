@@ -18,12 +18,6 @@ a {
 	max-width: 1170px;
 }
 
-.container:after {
-	display: table;
-	content: '';
-	clear: both;
-}
-
 .listReset {
 	list-style: none;
 	padding-left: 0;

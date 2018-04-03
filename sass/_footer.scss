@@ -1,5 +1,3 @@
-@media screen and (min-width: 480px) {
-
 .footer {
 	padding-top: 35px;
 	padding-bottom: 35px;
@@ -9,10 +7,23 @@
 
 .flexContainer {
 	display: flex;
+	flex-direction: column;
 }
 
 .flexContainer__item {
 	display: flex;
+	flex-direction: column;
+}
+
+.flexContainer__itemTop {
+	width: 80%;
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexContainer__part3 {
+	padding-bottom: 15px;	
 }
 
 .flexContainer__part1 a,
@@ -45,6 +56,7 @@
 	flex-direction: column;
 }
 
+@media screen and (min-width: 480px) {
 
 
 }
@@ -54,15 +66,21 @@
 
 .flexContainer {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
 .flexContainer__item {
+	width: 60%;
 	display: flex;
-    width: 60%;
-    justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
+.flexContainer__itemTop {
+	width: 55%;
+	justify-content: space-between;
+}
     
 }
 

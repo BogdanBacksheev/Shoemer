@@ -1,5 +1,3 @@
-/*
-
 $(function() {
 	let windowWidth = $(window).width();
 
@@ -9,6 +7,6 @@ $(function() {
 		$(".mainMenu").appendTo(".header__bottomLeft");
 		$(".bascet").appendTo(".header__bottomInner");
 	}
+
 });
 
-*/

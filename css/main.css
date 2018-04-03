@@ -313,43 +313,61 @@ a {
   min-width: 320px;
   max-width: 1170px; }
 
-.container:after {
-  display: table;
-  content: '';
-  clear: both; }
-
 .listReset {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0; }
 
-@media screen and (min-width: 480px) {
-  .header {
-    font-size: 16px; }
+.header {
+  font-size: 16px; }
 
-  .header__top {
-    display: none; }
+.header__top {
+  display: none; }
 
-  .header__bottom {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #2D1C46; }
+.header__bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #2D1C46; }
 
-  .flexContainerBottom a {
-    display: none; }
+.flexContainerBottom {
+  display: flex;
+  justify-content: space-between; }
 
+.flexContainerBottom a {
+  display: none; }
+
+.header__bottomInner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; }
+
+.logo {
+  width: 278px;
+  height: 40px;
+  background: url(../images/logo.png); }
+
+.header__mobMenu {
+  width: 10%; }
+
+.toggleMobMenu {
+  width: 30px;
+  padding-top: 15px; }
+
+.toggleMobMenu span {
+  display: block;
+  height: 2px;
+  margin-bottom: 6px;
+  background-color: #fff; }
+
+.toggleMobMenu:last-child {
+  margin-bottom: 0; }
+
+@media screen and (min-width: 768px) {
   .header__bottomInner {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff; }
-
-  .logo {
-    width: 278px;
-    height: 40px;
-    background: url(../images/logo.png); } }
+    width: 60%; } }
 @media screen and (min-width: 992px) {
   .header__top {
     display: initial;
@@ -397,70 +415,87 @@ a {
 
   .header__mobMenu {
     display: none; } }
-@media screen and (min-width: 480px) {
-  .breadCrumbs {
-    display: inherit;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: #817d7d; }
+.breadCrumbs {
+  display: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #817d7d; }
 
-  .breadMenu a:after {
-    margin-left: 4px;
-    content: ">"; }
+.breadMenu a:after {
+  margin-left: 4px;
+  content: ">"; }
 
-  .breadMenu a:last-child:after {
-    display: none; } }
+.breadMenu a:last-child:after {
+  display: none; }
+
 @media screen and (min-width: 768px) {
   .breadCrumbs {
     display: none; } }
 @media screen and (min-width: 992px) {
   .breadCrumbs {
     display: inherit; } }
-@media screen and (min-width: 480px) {
-  .footer {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    font-size: 16px;
-    background-color: #2d1c45; }
+.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-size: 16px;
+  background-color: #2d1c45; }
 
-  .flexContainer {
-    display: flex; }
+.flexContainer {
+  display: flex;
+  flex-direction: column; }
 
-  .flexContainer__item {
-    display: flex; }
+.flexContainer__item {
+  display: flex;
+  flex-direction: column; }
 
-  .flexContainer__part1 a,
-  .flexContainer__part2 a,
-  .flexContainer__part3 a {
-    color: #fff; }
+.flexContainer__itemTop {
+  width: 80%;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between; }
 
-  .flexContainer__part2 span a,
-  .flexContainer__part3 span a {
-    color: #63398d; }
+.flexContainer__part3 {
+  padding-bottom: 15px; }
 
-  .flexFooter__cp {
-    font-size: 12px;
-    color: #fff; }
+.flexContainer__part1 a,
+.flexContainer__part2 a,
+.flexContainer__part3 a {
+  color: #fff; }
 
-  .flexFooter__cp a {
-    text-decoration: underline;
-    color: #fff; }
+.flexContainer__part2 span a,
+.flexContainer__part3 span a {
+  color: #63398d; }
 
-  .flexContainer__part1,
-  .flexContainer__part2,
-  .flexContainer__part3 {
-    display: flex;
-    flex-direction: column; } }
+.flexFooter__cp {
+  font-size: 12px;
+  color: #fff; }
+
+.flexFooter__cp a {
+  text-decoration: underline;
+  color: #fff; }
+
+.flexContainer__part1,
+.flexContainer__part2,
+.flexContainer__part3 {
+  display: flex;
+  flex-direction: column; }
+
 @media screen and (min-width: 768px) {
   .flexContainer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between; }
 
   .flexContainer__item {
-    display: flex;
     width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+  .flexContainer__itemTop {
+    width: 55%;
     justify-content: space-between; } }
 @media screen and (min-width: 1200px) {
   .flexFooter__cp {
