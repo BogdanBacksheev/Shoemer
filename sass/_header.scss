@@ -42,6 +42,7 @@
 .toggleMobMenu {
 	width: 30px;
 	padding-top: 15px;
+	cursor: pointer;
 }
 
 .toggleMobMenu span {
@@ -58,8 +59,28 @@
 
 @media screen and (min-width: 480px) {
 
+
+.header__mobMenuInner {
+	display: none;
+	height: 100px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	font-size: 20px;
+	background-color: rgba(0,0,0,.8);
+	z-index: 2;
 }
 
+.header__mobMenuInner.open {
+	display: block;
+}
+
+}
+
+@media screen and (min-width: 576px) {
+    
+}
 
 @media screen and (min-width: 768px) {
 
