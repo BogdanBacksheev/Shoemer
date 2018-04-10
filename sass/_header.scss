@@ -1,5 +1,6 @@
 .header {
 	font-size: 16px;
+	position: relative;
 }
 
 .header__top {
@@ -74,6 +75,9 @@
 
 .header__mobMenuInner.open {
 	display: block;
+	color: #fff;
+	text-align: center;
+	height: auto;
 }
 
 }
