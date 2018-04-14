@@ -1,16 +1,20 @@
-
-.header__bottomInner {
-	display: none;
-}
-
-
 .header {
 	font-size: 16px;
 	position: relative;
 }
 
-.header__top {
-	display: none;
+.flexContainerBottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__mobMenuInner .topMenu a,
+.header__mobMenuInner .basket a,
+.header__mobMenuInner .mainMenu a {
+	display: block;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .header__bottom {
@@ -19,21 +23,8 @@
 	background-color: #2D1C46;
 }
 
-.flexContainerBottom {
-	display: flex;
-	justify-content: space-between;
-}
-
-.flexContainerBottom a {
-	display: none;
-}
-
 .header__bottomInner {
-	width: 90%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: #fff;
 }
 
 .logo {
@@ -63,14 +54,10 @@
 	margin-bottom: 0;
 }
 
-
-@media screen and (min-width: 480px) {
-
-
 .header__mobMenuInner {
-	display: inline-block;
-	height: 100px;
 	position: absolute;
+	display: none;
+	height: 100px;
 	top: 100%;
 	left: 0;
 	right: 0;
@@ -79,24 +66,43 @@
 	z-index: 2;
 }
 
+.header__form {
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	margin-right: 10px;
+}
+
+button {
+	width: 21px;
+	height: 20px;
+	background: url(../images/search.png);
+}
+
 .header__mobMenuInner.open {
 	display: block;
+	padding-bottom: 10px;
 	color: #fff;
 	text-align: center;
 	height: auto;
 }
 
+@media screen and (min-width: 480px) {
+
+
 }
 
 @media screen and (min-width: 576px) {
-    
+
+
 }
 
 @media screen and (min-width: 768px) {
 
-.header__bottomInner {
-	width: 60%;
-}
 
 }
 
@@ -108,12 +114,12 @@
 	padding-bottom: 10px;
 }
 
-.flexContainerTop {
+.header__topInner {
 	display: flex;
 	justify-content: space-between;
 }
 
-.header__topInner {
+.topMenu {
 	width: 35%;
 	display: flex;
 	justify-content: space-between;
@@ -126,14 +132,30 @@
 	color: #fff;
 }
 
-
 .flexContainerBottom a {
 	display: initial;
 }
 
+.header__bottomInner {
+	display: flex;
+	width: 55%;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
 
 .header__bottomInner a {
 	color: #fff;
+}
+
+.mainMenu {
+	display: flex;
+	width: 45%;
+	justify-content: space-between;
+}
+
+.header__mobMenu {
+	display: none;
 }
 
 .basket a {
@@ -150,20 +172,13 @@
 	vertical-align: middle;
 	background: url(../images/basket.png);
 }
-
-button {
-	width: 21px;
-	height: 20px;
-	background: url(../images/search.png);
-}
-
-.header__mobMenu {
-	display: none;
-}
     
 }
 
 @media screen and (min-width: 1200px) {
-    
+
+.mainMenu {
+	width: 50%;
+}
 
 }
