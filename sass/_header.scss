@@ -1,3 +1,9 @@
+
+.header__bottomInner {
+	display: none;
+}
+
+
 .header {
 	font-size: 16px;
 	position: relative;
@@ -62,7 +68,7 @@
 
 
 .header__mobMenuInner {
-	display: none;
+	display: inline-block;
 	height: 100px;
 	position: absolute;
 	top: 100%;
@@ -112,7 +118,6 @@
 	display: flex;
 	justify-content: space-between;
 }
-
 
 .flexContainerBottom {
 	display: flex;

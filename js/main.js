@@ -10,9 +10,22 @@
 
 });*/
 
+
+/*
+$(function(){
+	$(".toggleMobMenu").on("click",function(){
+		$(".header__mobMenuInner").toggleClass("open");
+	});
+
+});
+*/
+
+
 $(function() {
 
 		$(".toggleMobMenu").on("click",function(){
+
+			$(".header__mobMenuInner").toggleClass("open");
 
 	let windowWidth = $(window).width();
 
@@ -26,20 +39,33 @@ $(function() {
 });
 });
 
-/*
-$(function(){
-	$(".toggleMobMenu").on("click",function(){
-		$(".header__mobMenuInner").toggleClass("open");
-	});
 
+
+
+
+$(document).ready(function() {
+  $('select').niceSelect();
 });
-*/
+
 
 $(function(){
 	$(".accordion__itemTitle").on("click",function(){
 
 		var accordionItem = $(this).closest(".accordion__item");
 		var accordionItemSiblings = $(accordionItem).siblings(".accordion__item");
+		var accordionCheckboxWrap = $(accordionItemSiblings).children(".accordion__checkboxWrap");
+
+		$(accordionCheckboxWrap).hide();
+
+		$(this).siblings(".accordion__checkboxWrap").slideToggle();
+	});
+});
+
+$(function(){
+	$(".accordion__catalogTitle").on("click",function(){
+
+		var accordionItem = $(this).closest(".accordion__catalog");
+		var accordionItemSiblings = $(accordionItem).siblings(".accordion__catalog");
 		var accordionCheckboxWrap = $(accordionItemSiblings).children(".accordion__checkboxWrap");
 
 		$(accordionCheckboxWrap).hide();
