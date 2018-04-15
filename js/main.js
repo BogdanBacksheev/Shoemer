@@ -15,8 +15,16 @@ $(function() {
 	}
 });
 
+$(function(){
+	$(".openModelBtn").on("click", function(){
+		$(".modal").addClass("active");
+	});
 
+	$(".closeModelBtn").on("click", function(){
+		$(".modal").removeClass("active");
+	});
 
+});
 
 $(document).ready(function() {
   $('select').niceSelect();

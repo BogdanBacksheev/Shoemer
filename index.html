@@ -243,12 +243,162 @@
 							<div class="col-md-9 col-lg-9">
 								<div class="row">
 									<div class="col-xs-10 visible-xs col-xs-push-1 col-sm-6 visible-sm col-sm-push-0">
-										<select name="filter" id="filter">
-											<option data-display="Фильтры"></option>
-											<option value="1">1000 грн. - 1500 грн.</option>
-											<option value="2">1500 грн. - 2000 грн.</option>
-											<option value="3">2000 грн. - 2500 грн.</option>
-										</select>
+											<span class="openModelBtn">Фильтры</span>
+										<div class="modal overlay">
+											<div class="modalWindow">
+												<span class="closeModelBtn"></span>
+												<p>
+													<div class="filter">Фильтры</div>												
+														<div class="accordion__item">
+															<span class="accordion__itemTitle">Размер</span>
+															<div class="accordion__checkboxWrap">
+																<div class="inputWrap">
+																	<input id="size" type="checkbox">
+																	<label for="size">>40</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="size1" type="checkbox">
+																	<label for="size1">41</label>
+																</div>					
+																<div class="inputWrap">
+																	<input id="size2" type="checkbox">
+																	<label for="size2">42</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="size3" type="checkbox">
+																	<label for="size3">43</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="size4" type="checkbox">
+																	<label for="size4">44</label>
+																</div>
+															</div>														
+														</div>
+														<div class="accordion__item">
+															<span class="accordion__itemTitle">Бренд</span>
+															<div class="accordion__checkboxWrap">
+																<div class="inputWrap">
+																	<input id="brand" type="checkbox">
+																	<label for="brand">Moloto</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="brand1" type="checkbox">
+																	<label for="brand1">Shhuna</label>	
+																</div>					
+																<div class="inputWrap">
+																	<input id="brand2" type="checkbox">
+																	<label for="brand2">Plari Brand</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="brand3" type="checkbox">
+																	<label for="brand3">Crosswood</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="brand4" type="checkbox">
+																	<label for="brand4">Binari</label>
+																</div>
+															</div>														
+														</div>
+														<div class="accordion__item">
+															<span class="accordion__itemTitle">Сезон</span>
+															<div class="accordion__checkboxWrap">
+																<div class="inputWrap">			
+																	<input id="season" type="checkbox">
+																	<label for="season">Весна-осень</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="season1" type="checkbox">
+																	<label for="season1">Лето</label>	
+																</div>					
+																<div class="inputWrap">
+																	<input id="season2" type="checkbox">
+																	<label for="season2">Зима</label>
+																</div>
+															</div>														
+														</div>
+														<div class="filter">Каталог</div>												
+														<div class="accordion__catalog">
+															<span class="accordion__catalogTitle">Мужская обувь</span>
+															<div class="accordion__checkboxWrap">
+																<div class="inputWrap">
+																	<input id="mShoes" type="checkbox">
+																	<label for="mShoes">Ботинки</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="mShoes1" type="checkbox">
+																	<label for="mShoes1">Туфли</label>
+																</div>					
+																<div class="inputWrap">
+																	<input id="mShoes2" type="checkbox">
+																	<label for="mShoes2">Мокасины</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="mShoes3" type="checkbox">
+																	<label for="mShoes3">Кеды</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="mShoes4" type="checkbox">
+																	<label for="mShoes4">Кроссовки</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="mShoes5" type="checkbox">
+																	<label for="mShoes5">Слипоны</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="mShoes6" type="checkbox">
+																	<label for="mShoes6">Сапоги</label>
+																</div>
+															</div>														
+														</div>
+														<div class="accordion__catalog">
+															<span class="accordion__catalogTitle">Женская обувь</span>
+															<div class="accordion__checkboxWrap">
+																<div class="inputWrap">
+																	<input id="wShoes" type="checkbox">
+																	<label for="wShoes">Сапоги</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="wShoes1" type="checkbox">
+																	<label for="wShoes1">Ботинки</label>	
+																</div>					
+																<div class="inputWrap">
+																	<input id="wShoes2" type="checkbox">
+																	<label for="wShoes2">Туфли</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="wShoes3" type="checkbox">
+																	<label for="wShoes3">Балетки</label>
+																</div>
+																<div class="inputWrap">
+																	<input id="wShoes4" type="checkbox">
+																	<label for="wShoes4">Босоножки</label>
+																</div>
+															</div>														
+														</div>
+														<div class="accordion__catalog">
+														<span class="accordion__catalogTitle">Детская обувь</span>
+														<div class="accordion__checkboxWrap">
+															<div class="inputWrap">			
+																<input id="cShoes" type="checkbox">
+																<label for="cShoes">Ботинки</label>
+															</div>
+															<div class="inputWrap">
+																<input id="cShoes1" type="checkbox">
+																<label for="cShoes1">Туфли</label>	
+															</div>					
+															<div class="inputWrap">
+																<input id="cShoes2" type="checkbox">
+																<label for="cShoes2">Сапоги</label>
+															</div>
+															<div class="inputWrap">
+																<input id="cShoes3" type="checkbox">
+																<label for="cShoes3">Кеды</label>
+															</div>
+														</div>														
+													</div>
+												</p>
+											</div>
+										</div>
 									</div>
 									<div class="clearfix visible-xs"></div>
 									<div class="col-xs-10 visible-xs col-xs-push-1 col-sm-6 visible-sm col-sm-push-0 col-md-5 visible-md col-lg-5 visible-lg">
