@@ -15,6 +15,7 @@ $(function() {
 	}
 });
 
+
 $(function(){
 	$(".openModelBtn").on("click", function(){
 		$(".modal").addClass("active");
@@ -25,6 +26,7 @@ $(function(){
 	});
 
 });
+
 
 $(document).ready(function() {
   $('select').niceSelect();
@@ -43,6 +45,7 @@ $(function(){
 		$(this).siblings(".accordion__checkboxWrap").slideToggle();
 	});
 });
+
 
 $(function(){
 	$(".accordion__catalogTitle").on("click",function(){

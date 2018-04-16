@@ -455,13 +455,55 @@ button {
 @media screen and (min-width: 1200px) {
   .mainMenu {
     width: 50%; } }
+.content h1 {
+  padding: 30px 0;
+  margin: 0;
+  text-align: center; }
+
+.breadCrumbs {
+  display: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #817d7d; }
+
+.breadMenu a:after {
+  margin-left: 4px;
+  content: ">"; }
+
+.breadMenu a:last-child:after {
+  display: none; }
+
+.thumbnails img {
+  width: 100%;
+  height: auto; }
+
+.text {
+  padding-top: 20px; }
+
+.cost {
+  padding-top: 15px;
+  padding-bottom: 20px; }
+
+.thumbnails h2 {
+  display: inline-block;
+  margin: 0; }
+
+.nice-select {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 1px;
+  border: 1px solid #bab4c2; }
+
 .openModelBtn {
   display: inline-block;
-  padding: 9px 15px;
-  font-size: 14px;
-  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 15px;
   border: 1px solid #bab4c2;
-  width: 100%; }
+  font-size: 14px;
+  cursor: pointer; }
 
 .modal {
   display: none;
@@ -496,7 +538,7 @@ button {
 
 .closeModelBtn {
   position: absolute;
-  top: 15px;
+  top: 8px;
   right: 15px;
   width: 15px;
   height: 15px;
@@ -575,86 +617,86 @@ button {
   border: 1px solid;
   margin-right: 15px; }
 
-#size,
-#size1,
-#size2,
-#size3,
-#size4 {
+#size00,
+#size11,
+#size22,
+#size33,
+#size44 {
   display: none; }
 
-#brand,
-#brand1,
-#brand2,
-#brand3,
-#brand4 {
+#brand00,
+#brand11,
+#brand22,
+#brand33,
+#brand44 {
   display: none; }
 
-#season,
-#season1,
-#season2 {
+#season00,
+#season11,
+#season22 {
   display: none; }
 
-#mShoes,
-#mShoes1,
-#mShoes2,
-#mShoes3,
-#mShoes4,
-#mShoes5,
-#mShoes6 {
+#mShoes00,
+#mShoes11,
+#mShoes22,
+#mShoes33,
+#mShoes44,
+#mShoes55,
+#mShoes66 {
   display: none; }
 
-#wShoes,
-#wShoes1,
-#wShoes2,
-#wShoes3,
-#wShoes4 {
+#wShoes00,
+#wShoes11,
+#wShoes22,
+#wShoes33,
+#wShoes44 {
   display: none; }
 
-#cShoes,
-#cShoes1,
-#cShoes2,
-#cShoes3 {
+#cShoes00,
+#cShoes11,
+#cShoes22,
+#cShoes33 {
   display: none; }
 
-#size:checked + label:before,
-#size1:checked + label:before,
-#size2:checked + label:before,
-#size3:checked + label:before,
-#size4:checked + label:before {
+#size00:checked + label:before,
+#size11:checked + label:before,
+#size22:checked + label:before,
+#size33:checked + label:before,
+#size44:checked + label:before {
   background-color: #000; }
 
-#brand:checked + label:before,
-#brand1:checked + label:before,
-#brand2:checked + label:before,
-#brand3:checked + label:before,
-#brand4:checked + label:before {
+#brand00:checked + label:before,
+#brand11:checked + label:before,
+#brand22:checked + label:before,
+#brand33:checked + label:before,
+#brand44:checked + label:before {
   background-color: #000; }
 
-#season:checked + label:before,
-#season1:checked + label:before,
-#season2:checked + label:before {
+#season00:checked + label:before,
+#season11:checked + label:before,
+#season22:checked + label:before {
   background-color: #000; }
 
-#mShoes:checked + label:before,
-#mShoes1:checked + label:before,
-#mShoes2:checked + label:before,
-#mShoes3:checked + label:before,
-#mShoes4:checked + label:before,
-#mShoes5:checked + label:before,
-#mShoes6:checked + label:before {
+#mShoes00:checked + label:before,
+#mShoes11:checked + label:before,
+#mShoes22:checked + label:before,
+#mShoes33:checked + label:before,
+#mShoes44:checked + label:before,
+#mShoes55:checked + label:before,
+#mShoes66:checked + label:before {
   background-color: #000; }
 
-#wShoes:checked + label:before,
-#wShoes1:checked + label:before,
-#wShoes2:checked + label:before,
-#wShoes3:checked + label:before,
-#wShoes4:checked + label:before {
+#wShoes00:checked + label:before,
+#wShoes11:checked + label:before,
+#wShoes22:checked + label:before,
+#wShoes33:checked + label:before,
+#wShoes44:checked + label:before {
   background-color: #000; }
 
-#cShoes:checked + label:before,
-#cShoes1:checked + label:before,
-#cShoes2:checked + label:before,
-#cShoes3:checked + label:before {
+#cShoes00:checked + label:before,
+#cShoes11:checked + label:before,
+#cShoes22:checked + label:before,
+#cShoes33:checked + label:before {
   background-color: #000; }
 
 .sizeQuestion {
@@ -665,51 +707,6 @@ button {
   font-size: 16px;
   text-decoration: underline;
   background-color: #fcb323; }
-
-.content h1 {
-  padding: 30px 0;
-  margin: 0;
-  text-align: center; }
-
-.breadCrumbs {
-  display: inherit;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #817d7d; }
-
-.breadMenu a:after {
-  margin-left: 4px;
-  content: ">"; }
-
-.breadMenu a:last-child:after {
-  display: none; }
-
-.thumbnails img {
-  width: 100%;
-  height: auto; }
-
-.text {
-  padding-top: 20px; }
-
-.cost {
-  padding-top: 15px;
-  padding-bottom: 20px; }
-
-.thumbnails h2 {
-  display: inline-block;
-  margin: 0; }
-
-.sorting {
-  border: 2px solid;
-  padding-left: 10px; }
-
-.nice-select {
-  width: 100%;
-  margin-bottom: 30px;
-  border-radius: 1px;
-  border: 1px solid #bab4c2; }
 
 .container h3 {
   font-size: 28px;
